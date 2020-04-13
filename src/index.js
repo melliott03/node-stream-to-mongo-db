@@ -21,7 +21,7 @@ module.exports = {
 
     // this function is usefull to insert records and reset the records array
     const insert = async () => {
-      await collection.insertMany(records, config.insertOptions);
+      await collection.insert(records, config.insertOptions);
       records = [];
     };
 
